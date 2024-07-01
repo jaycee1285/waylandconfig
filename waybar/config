@@ -1,0 +1,56 @@
+{
+        "layer": "top",
+        "position": "bottom",
+
+        "modules-left": ["custom/logo", "wlr/taskbar"],
+
+
+        "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+
+        "clock": {
+        "format": " {:%I:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",},
+
+        "tray": {
+          "icon-size": 30,
+          "spacing": 3
+        },
+    "pulseaudio": {
+       "scroll-step": 5,
+        "format":"{icon}   {volume}%",
+        "format-icons": {
+        "default": ["","","",""]
+      },
+      "on-click":"pavucontrol-qt"
+    },
+
+   "custom/logo": {
+    "format": "     ",
+    "interval": "once",
+    "tooltip": false,
+    "on-click":"fuzzel"
+},
+"battery": {
+  "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+  },
+  "format": "{capacity}% ",
+  "format-charging": "{capacity}%",
+  "format-plugged": "{capacity}%",
+  "format-alt": "{time} ",
+},
+    
+  "wlr/taskbar": {
+	"format": "{icon}",
+	"icon-size": 30,
+	"icon-theme": "kanagawa-gtk",
+	"tooltip-format": "{title}",
+	"on-click": "minimize-raise",
+	"on-click-middle": "close",
+	"ignore-list": [
+	    "waybar"
+	],
+},
+}

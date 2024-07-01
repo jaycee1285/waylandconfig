@@ -1,0 +1,36 @@
+* {
+        font-family: FontAwesome, IosevkaTermSlab, sans-serif;
+        font-size: 30px;
+      }
+
+      window#waybar {
+        background: #12120f;
+        color: #C8C093;
+        border-radius: 10px;
+      }
+      #custom-logo,
+      #network,
+      #pulseaudio,
+      #tray,
+      #clock{
+      margin: 3px;
+      padding: 5px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      font-size: 30px;
+      border-color: #8B8047;
+      border-radius: 8px;
+}
+ 
+      #clock{
+      margin-right: 0px; 
+}
+
+
+      #custom-logo{
+        background-image: url("/home/john/nixos-logo.png");
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 15px;
+}
