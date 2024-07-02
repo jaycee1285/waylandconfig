@@ -8,18 +8,19 @@
         "modules-right": ["tray", "pulseaudio", "battery", "clock"],
 
         "clock": {
-        "format": " {:%I:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",},
+        "format": " {:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"},
 
         "tray": {
-          "icon-size": 30,
+          "icon-size": 40,
           "spacing": 3
         },
     "pulseaudio": {
        "scroll-step": 5,
-        "format":"{icon}   {volume}%",
+        "format":"{icon}",
         "format-icons": {
-        "default": ["","","",""]
+        "default": ["","","",""],
+        "tooltip-format": "{volume}%"
       },
       "on-click":"pavucontrol-qt"
     },
@@ -44,13 +45,13 @@
     
   "wlr/taskbar": {
 	"format": "{icon}",
-	"icon-size": 30,
+	"icon-size": 40,
 	"icon-theme": "kanagawa-gtk",
 	"tooltip-format": "{title}",
 	"on-click": "minimize-raise",
 	"on-click-middle": "close",
 	"ignore-list": [
 	    "waybar"
-	],
-},
+	]
+}
 }

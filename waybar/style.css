@@ -1,6 +1,6 @@
 * {
-        font-family: FontAwesome, IosevkaTermSlab, sans-serif;
-        font-size: 30px;
+        font-family: FontAwesome, Buenard, serif;
+        font-size: 14px;
       }
 
       window#waybar {
@@ -29,7 +29,7 @@
 
       #custom-logo{
         background-image: url("/home/john/nixos-logo.png");
-        background-size: 50px 50px;
+        background-size: 40px 40px;
         background-repeat: no-repeat;
         background-position: center;
         margin-left: 15px;
