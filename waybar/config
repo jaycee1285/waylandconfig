@@ -4,27 +4,43 @@
 
         "modules-left": ["custom/logo", "wlr/taskbar"],
 
+        "modules-center": ["network#vpn"],
 
-        "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+
+        "modules-right": ["tray", "network", "pulseaudio", "battery", "clock"],
 
         "clock": {
         "format": " {:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"},
 
         "tray": {
-          "icon-size": 40,
+          "icon-size": 30,
+          "icon-theme": "Zafiro-Nord-Black",
           "spacing": 3
         },
     "pulseaudio": {
        "scroll-step": 5,
-        "format":"{icon}",
+        "format":"{icon}  {volume}%",
         "format-icons": {
         "default": ["","","",""],
         "tooltip-format": "{volume}%"
       },
-      "on-click":"pavucontrol-qt"
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-right-click": "pavucontrol",
+      "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1.0",
+      "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- -l 1.0"
     },
 
+
+    "network": {
+      "interface": "wlp0s20f3",
+      "format-wifi": "",
+      "format-ethernet": "{ipaddr}/{cidr} ",
+      "tooltip-format": "{ifname} via {gwaddr} ",
+      "format-linked": "{ifname} (No IP) ",
+      "format-disconnected": "Disconnected ⚠",
+      "on-click": "kitty -e nmtui connect"
+  },
    "custom/logo": {
     "format": "     ",
     "interval": "once",
@@ -32,26 +48,47 @@
     "on-click":"fuzzel"
 },
 "battery": {
+  "interval": 5,
   "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 15
+    "warning": 25,
+    "critical": 10
   },
-  "format": "{capacity}% ",
-  "format-charging": "{capacity}%",
-  "format-plugged": "{capacity}%",
-  "format-alt": "{time} ",
+  "format": "{icon}",
+  "format-icons": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "format-charging": "  Charged in {time} ({capacity}%)",
+  "format-discharging": "{capacity}%",
+  "tooltip-format-plugged": "{capacity}%",
+  "tooltip-format-charging": "  Charged in {time} ({capacity}%)",
+  "tooltip-format-discharging": "  Empty in {time}",
+  "tooltip": true
 },
     
   "wlr/taskbar": {
 	"format": "{icon}",
 	"icon-size": 40,
-	"icon-theme": "kanagawa-gtk",
+	"icon-theme": "Shade of Z - Black",
 	"tooltip-format": "{title}",
 	"on-click": "minimize-raise",
 	"on-click-middle": "close",
 	"ignore-list": [
 	    "waybar"
 	]
+},
+"network#vpn": {
+  "interval": 5,
+  "interface": "tun0",
+  "format": "\uf3ed",
+  "format-disconnected": "",
+  "tooltip-format": "VPN Connected: {ipaddr}"
 }
 }

@@ -3,6 +3,8 @@
 # Set background image.
 swww-daemon &
 
+/usr/lib/polkit-kde-authentication-agent-1 >/dev/null 2>&1 &
+
 # Launch a panel such as yambar or waybar.
 waybar >/dev/null 2>&1 &
 
@@ -12,11 +14,16 @@ waybar >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 
 # Start the Thunar daemon for better startup
-thunar --daemon &
+thunar --daemon 2>&1 &
+
+onedrivegui 2>&1 &
 
 # Deploy swww wallpapers
-swww img -o DP-1 ~/dotfiles/walls/wave.png &
+swww img $HOME/Pictures/currentwall.png 2>&1 &
 
 # Define custom programs to start
-
-nm-applet --indicator &
+    exec swayidle -w \
+        timeout 300 'swaylock --screenshots --effect-pixelate 10' \
+        timeout 600 'swaymsg "output * dpms off"' \
+            resume 'swaymsg "output * dpms on"' \
+        before-sleep 'swaylock --screenshots --effect-pixelate 10'

@@ -1,17 +1,17 @@
 * {
-        font-family: FontAwesome, IosevktaTermSlab, sans-serif;
+        font-family: material-design-icons, IosevkaTermSlab, sans-serif;
         font-size: 25px;
       }
 
       window#waybar {
-        background: transparent;
-        color: #fef0cb;
-        transition-property: background-color;
-        transition-duration: .5s;
+        background: #1c1c1c;;
+        color: #ebebeb;
+        ;
         border-radius: 10px;
-        border-color: #2E3440;
-        border-width: 2px;
       }
+
+
+      
       #custom-logo,
       #network{
         margin-right: 10px;
@@ -51,6 +51,3 @@
         background-position: center;
         margin-left: 10px;
 }
-
-
-/*5e81ac */
