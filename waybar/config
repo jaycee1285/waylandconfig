@@ -15,7 +15,7 @@
 
         "tray": {
           "icon-size": 30,
-          "icon-theme": "Zafiro-Nord-Black",
+          "icon-theme": "White Chips Heavy",
           "spacing": 3
         },
     "pulseaudio": {
@@ -76,7 +76,7 @@
   "wlr/taskbar": {
 	"format": "{icon}",
 	"icon-size": 40,
-	"icon-theme": "Shade of Z - Black",
+	"icon-theme": "White Chips Heavy",
 	"tooltip-format": "{title}",
 	"on-click": "minimize-raise",
 	"on-click-middle": "close",
