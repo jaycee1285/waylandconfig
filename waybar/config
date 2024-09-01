@@ -2,9 +2,7 @@
         "layer": "top",
         "position": "bottom",
 
-        "modules-left": ["custom/logo", "wlr/taskbar"],
-
-        "modules-center": ["network#vpn"],
+        "modules-center": ["wlr/taskbar","network#vpn"],
 
 
         "modules-right": ["tray", "network", "pulseaudio", "battery", "clock"],
@@ -12,15 +10,14 @@
         "clock": {
         "format": " {:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"},
-
         "tray": {
-          "icon-size": 30,
-          "icon-theme": "White Chips Heavy",
-          "spacing": 3
+          "icon-size": 40,
+          "spacing": 3,
+          "icon-theme": "Whitechips"
         },
     "pulseaudio": {
        "scroll-step": 5,
-        "format":"{icon}  {volume}%",
+        "format":"{icon}   {volume}%",
         "format-icons": {
         "default": ["","","",""],
         "tooltip-format": "{volume}%"
@@ -75,8 +72,8 @@
     
   "wlr/taskbar": {
 	"format": "{icon}",
-	"icon-size": 40,
-	"icon-theme": "White Chips Heavy",
+	"icon-size": 48,
+  "icon-theme": "Whitechips",
 	"tooltip-format": "{title}",
 	"on-click": "minimize-raise",
 	"on-click-middle": "close",
@@ -90,5 +87,12 @@
   "format": "\uf3ed",
   "format-disconnected": "",
   "tooltip-format": "VPN Connected: {ipaddr}"
-}
+},
+
+"app_ids-mapping": {
+      ".librewolf-wrapped": "firefox",
+      "codium": "vscode",
+      ".kitty-wrapped": "kitty",
+      "onedrivegui": "onedrive"
+  }
 }

@@ -1,34 +1,27 @@
 * {
-        font-family: material-design-icons, IosevkaTermSlab, sans-serif;
+        font-family: FontAwesome, IosevktaTermSlab, sans-serif;
         font-size: 25px;
       }
 
       window#waybar {
-      background: transparent;
-      border-radius: 10px;
-      border-color: #ebebeb;
-      border-width: 5px;
+        background: transparent;
+        transition-property: background-color;
+        transition-duration: .5s;
       }
 
-      .modules-left {
-        background: #1c1c1c;;
-        color: #ebebeb;
-        border-radius: 15px;
-    
-    }
-    
-    .modules-center {
-      background: #1c1c1c;;
-      color: #ebebeb;
-        border-radius: 15px;
-    }
-    
-    .modules-right {
-      background: #1c1c1c;;
-      color: #ebebeb;
-      border-radius: 15px; 
-    }
+
+      .modules-center {
+        background: #5e81ac;
+        color: #fef0cb;
+          border-radius: 15px;
+      }
       
+      .modules-right {
+        background: #5e81ac;
+        color: #fef0cb;
+          border-radius: 15px;
+      }
+    
       #custom-logo,
       #network{
         margin-right: 10px;
@@ -41,7 +34,8 @@
         font-size: 20px;
       }
       #tray{
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
 
       }
       #clock{
@@ -68,3 +62,6 @@
         background-position: center;
         margin-left: 10px;
 }
+
+
+/*5e81ac */

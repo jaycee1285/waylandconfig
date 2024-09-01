@@ -1,13 +1,26 @@
 * {
         font-family: FontAwesome, IosevkaTermSlab, sans-serif;
-        font-size: 20px;
+        font-size: 25px;
+      }
+      window#waybar {
+        background: transparent;
+        transition-property: background-color;
+        transition-duration: .5s;
       }
 
-      window#waybar {
+      .modules-center {
         background: #12120f;
         color: #C8C093;
-        border-radius: 10px;
+          border-radius: 15px;
       }
+      
+      .modules-right {
+        background: #12120f;
+        color: #C8C093;
+          border-radius: 15px;
+      }
+      #custom-logo,
+
       #custom-logo,
       #network{
         margin-right: 10px;
