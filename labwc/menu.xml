@@ -8,9 +8,14 @@
         <command>librewolf</command>
       </action>
     </item>
-    <item label="Joplin" icon="lutris">
+    <item label="Chromium" icon="lutris">
       <action name="Execute">
-        <command>joplin-desktop</command>
+        <command>chromium</command>
+      </action>
+    </item>
+        <item label="obsidian" icon="lutris">
+      <action name="Execute">
+        <command>obsidian</command>
       </action>
     </item>
     

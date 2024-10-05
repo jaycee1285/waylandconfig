@@ -1,5 +1,5 @@
-S* {
-        font-family: FontAwesome, IosevktaTermSlab, sans-serif;
+* {
+        font-family: material-design-icons, IosevkaTermSlab, sans-serif;
         font-size: 25px;
       }
 
@@ -9,19 +9,17 @@ S* {
         transition-duration: .5s;
       }
 
-
       .modules-center {
-        background: #5e81ac;
-        color: #fef0cb;
+        background: #242936;
+        color: #FFD173;
           border-radius: 15px;
       }
       
       .modules-right {
-        background: #5e81ac;
-        color: #fef0cb;
+        background: #242936;
+        color: #FFD173;
           border-radius: 15px;
       }
-    
       #custom-logo,
       #network{
         margin-right: 10px;

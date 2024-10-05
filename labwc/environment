@@ -15,23 +15,26 @@
 
 ## Force firefox to use wayland backend.
 
-MOZ_ENABLE_WAYLAND=1
+##MOZ_ENABLE_WAYLAND=1
 
-## ELECTRON_OZONE_PLATFORM_HINT="auto";
+ELECTRON_OZONE_PLATFORM_HINT=auto
 
-## NIXOS_OZONE_WL = 1
+NIXOS_OZONE_WL= 1
 
-export QT_QPA_PLATFORM="wayland"
-export QT_QPA_PLATFORMTHEME=qt5ct
+QT_QPA_PLATFORM=wayland;xcb
+export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 
-GDK_BACKEND=wayland,x11
-QT_QPA_PLATFORM=wayland;xcb
+GDK_BACKEND=wayland
 
 ## Set cursor theme and size. Find system icons themes with:
 ## `find /usr/share/icons/ -type d -name "cursors"`
 
+## Error: we don't have any display, WAYLAND_DISPLAY='wayland-0' DISPLAY=':0'
 
+
+
+XDG_CURRENT_DESKTOP=wlroots
 XCURSOR_THEME=phinger-cursors-light
 XCURSOR_SIZE=24
 XKB_DEFAULT_LAYOUT=us

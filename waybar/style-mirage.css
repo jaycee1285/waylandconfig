@@ -2,11 +2,30 @@
         font-family: material-design-icons, IosevkaTermSlab, sans-serif;
         font-size: 25px;
       }
-
       window#waybar {
+        background: transparent;
+        border-radius: 10px;
+        border-color: #FFD173;
+        border-width: 5px;
+        }
+      
+        .modules-left {
+          background: #242936;
+          color: #FFD173;
+          border-radius: 15px;
+      
+      }
+      
+      .modules-center {
         background: #242936;
         color: #FFD173;
-        border-radius: 10px;
+          border-radius: 15px;
+      }
+      
+      .modules-right {
+        background: #242936;
+        color: #FFD173;
+        border-radius: 15px; 
       }
       #custom-logo,
       #network{

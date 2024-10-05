@@ -7,12 +7,12 @@ default values.
   <core>
     <decoration>server</decoration>
     <gap>0</gap>
-    <adaptiveSync>no</adaptiveSync>
+    <adaptiveSync>yes</adaptiveSync>
     <reuseOutputMode>no</reuseOutputMode>
   </core>
   <!-- <font><theme> can be defined without an attribute to set all places -->
   <theme>
-    <name>Simply_Circles_Dark</name>
+    <name>felix-nord</name>
     <cornerRadius>10</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font>
@@ -45,8 +45,8 @@ windows and WM_CLASS for XWayland clients.
     <keybind key="W-f">
       <action name="Execute" command="thunar"/>
     </keybind>
-    <keybind key="W-j">
-      <action name="Execute" command="joplin-desktop"/>
+    <keybind key="W-o">
+      <action name="Execute" command="obsidian"/>
     </keybind>
     <keybind key="F3">
       <action name="Execute" command="grim"/>
@@ -65,6 +65,12 @@ windows and WM_CLASS for XWayland clients.
     </keybind>
     <keybind key="XF86_AudioMute">
       <action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"/>
+    </keybind>
+<keybind key="W-m">
+    <action name="ToggleMaximize" direction="both" />
+    </keybind>
+    <keybind key="W-n">
+    <action name="UnMaximize" direction="both" />
     </keybind>
   </keyboard>
   <libinput>
