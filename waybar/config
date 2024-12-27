@@ -13,7 +13,7 @@
         "tray": {
           "icon-size": 40,
           "spacing": 3,
-          "icon-theme": "Whitechips"
+          "icon-theme": "articons-light"
         },
     "pulseaudio": {
        "scroll-step": 5,
@@ -73,7 +73,7 @@
   "wlr/taskbar": {
 	"format": "{icon}",
 	"icon-size": 48,
-  "icon-theme": "Whitechips",
+  "icon-theme": "arcticons-light",
 	"tooltip-format": "{title}",
 	"on-click": "minimize-raise",
 	"on-click-middle": "close",

@@ -6,26 +6,26 @@
   window#waybar {
   background: transparent;
   border-radius: 10px;
-  border-color: #EFF1F5;
+  border-color: #a9b1d6;
   border-width: 5px;
   }
 
   .modules-left {
-    background: #EFF1F5;
-    color: #4C4F69;
+    background: #313244;
+    color: #a9b1d6;
     border-radius: 15px;
 
 }
 
 .modules-center {
-  background: #EFF1F5;
-  color: #4C4F69;
+  background: #313244;
+  color: #a9b1d6;
     border-radius: 15px;
 }
 
 .modules-right {
-  background: #EFF1F5;
-  color: #4C4F69;
+  background: #313244;
+  color: #a9b1d6;
   border-radius: 15px; 
 }
   

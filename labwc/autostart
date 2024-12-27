@@ -8,6 +8,9 @@ swww-daemon &
 # Launch a panel such as yambar or waybar.
 waybar >/dev/null 2>&1 &
 #sfwbar >/dev/null 2>&1 &
+#lxqt-session >/dev/null 2>&1 &
+#lxqt-panel >/deve/null 2>&1 &
+#nwg-panel >/dev/null 2>&1 &
 
 # Enable notifications. Typically GNOME/KDE application notifications go
 # through the org.freedesktop.Notifications D-Bus API and require a client such
@@ -22,7 +25,7 @@ onedrivegui 2>&1 &
 syncthing 2>&1 &
 
 # Deploy swww wallpapers
-swww img $HOME/Pictures/currentwall.png 2>&1 &
+swww img $HOME/Pictures/elephant-light.jpg 2>&1 &
 
 # Define custom programs to start
     exec swayidle -w \

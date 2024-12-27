@@ -1,34 +1,27 @@
-* {
-    font-family: material-design-icons, IosevkaTermSlab, sans-serif;
+S* {
+    font-family: FontAwesome, IosevktaTermSlab, sans-serif;
     font-size: 25px;
   }
 
   window#waybar {
-  background: transparent;
-  border-radius: 10px;
-  border-color: #EFF1F5;
-  border-width: 5px;
+    background: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
   }
 
-  .modules-left {
-    background: #EFF1F5;
-    color: #4C4F69;
-    border-radius: 15px;
 
-}
-
-.modules-center {
-  background: #EFF1F5;
-  color: #4C4F69;
-    border-radius: 15px;
-}
-
-.modules-right {
-  background: #EFF1F5;
-  color: #4C4F69;
-  border-radius: 15px; 
-}
+  .modules-center {
+    background: #073642;
+    color: #93A1A1;
+      border-radius: 15px;
+  }
   
+  .modules-right {
+    background: #073642;
+    color: #93A1A1;
+      border-radius: 15px;
+  }
+
   #custom-logo,
   #network{
     margin-right: 10px;
@@ -41,7 +34,8 @@
     font-size: 20px;
   }
   #tray{
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 
   }
   #clock{
@@ -68,3 +62,6 @@
     background-position: center;
     margin-left: 10px;
 }
+
+
+/*5e81ac */

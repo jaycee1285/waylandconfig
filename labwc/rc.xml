@@ -12,7 +12,7 @@ default values.
   </core>
   <!-- <font><theme> can be defined without an attribute to set all places -->
   <theme>
-    <name>felix-nord</name>
+    <name>Solarized-Light-OB</name>
     <cornerRadius>10</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font>
@@ -66,11 +66,14 @@ windows and WM_CLASS for XWayland clients.
     <keybind key="XF86_AudioMute">
       <action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"/>
     </keybind>
-<keybind key="W-m">
-    <action name="ToggleMaximize" direction="both" />
+    <keybind key="W-m">
+      <action name="ToggleMaximize" direction="both"/>
     </keybind>
     <keybind key="W-n">
-    <action name="UnMaximize" direction="both" />
+      <action name="UnMaximize" direction="both"/>
+    </keybind>
+    <keybind key="W-i">
+      <action name="Iconify" direction="both"/>
     </keybind>
   </keyboard>
   <libinput>
